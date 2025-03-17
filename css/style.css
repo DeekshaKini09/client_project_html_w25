@@ -1,0 +1,403 @@
+/* COMMON STYLING */
+
+
+/* skip to main content off screen & on focus */
+.skip a{
+  position: absolute; /*in reference to left*/
+    left:-10000px; /*off screen*/
+    height: 25px; /*large enough to click*/
+}
+
+.skip a:focus {
+  left: 10px; /*back on screen*/
+  top: 20px; /*positioned at top*/
+}
+
+
+/* styling header */
+header {
+  display: flex; /*type of display*/
+  align-items: center; /*identify how I want to items to align under inspect elements*/
+  justify-content: space-between; /*space between items*/
+  padding: 1rem 2vw;/* Top&Bottom: 1rem; Left&Right: 2 view width */
+  background-color: #00274c; /* UM Blue */
+}
+
+header img {
+  height: 4rem; /* resizing the img to stay fixed at 4rem */
+}
+
+nav ul {
+  list-style: none; /*removes the bullet points*/
+  display: flex; /*type of display*/
+  flex-direction: column; /*stack items vertically*/
+  flex-wrap: wrap; /*wraps the items instead of cutting it out*/
+  gap: 10px; /*adds space between items*/
+}
+
+nav ul li a {
+  text-decoration: none; /*removes underline*/
+  color: white; /*color of the text*/
+  font-weight: bold; /*bold text*/
+  padding: 10px; /*padding around the text*/
+  
+}
+
+nav ul li a:hover {
+  color: #ffcb05; /* UM Maize Color */
+}
+
+
+footer{
+  position: relative;
+  background: #00274c;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+/* END OF COMMON STYLING */
+
+
+/* MAIN PAGE - INDEX */
+
+
+/* index.html */
+.container {
+  /* display related */
+  display: flex; /* use flexbox */
+  flex-direction: column; /* stack items vertically */
+  align-items: center; /* center items horizontally */
+  text-align: center; /* center text */
+
+  position: relative; /* relative positioning */
+  width: 100%; /* full width */
+
+  /* backrgound image & sizing */
+  background: url("../images/background.jpg") no-repeat center center; /* background image shorthand property*/
+  background-size: cover; /* cover the entire container */
+  
+}
+
+.overview {
+  position: relative;
+  z-index: 2; /* Keeps text on top */
+  color: white; /* Ensures readability */
+  background: rgba(0, 0, 0, 0.5); /* to pass wave color contrast */
+  width: 100%;
+}
+
+.overview h1 {
+  font-size: 3rem; /* Larger font size */
+  font-weight: 600; /* Bold font weight */
+  margin-bottom: 1.5rem; /* Space at the bottom */
+  border-bottom: 4px solid #ffcb05; /* UM Yellow accent */
+  display: inline-block; /* Inline block to fit yellow border to the container */
+  padding-bottom: 0.5rem;
+}
+
+.overview h2 {
+  font-size: 2rem; /* Larger font size */
+  font-weight: 400; /* Lighter font weight */
+  margin-bottom: 1rem; /* Space at the bottom */
+}
+
+.overview p {
+  font-size: 1.2rem; /* Larger font size */
+  line-height: 1.6; /* Spacing between lines */
+  margin-bottom: 1rem; /* Space at the bottom */
+}
+
+.physical-health {
+  background: #f0f3ff;
+  padding: 40px;
+}
+
+.physical-grid {
+  display: grid; /* Since contains more than 1 column -> Grid layout */
+  grid-template-columns: 1fr 1fr; /* Two equal fraction columns */
+  gap: 20px; /* Adds spacing between sections */
+  align-items: start; /* Aligns items to the top */
+  padding: 20px; /* Adds padding around the grid */
+}
+
+.physical-item {
+  text-align: center; /* Centers text */
+}
+
+.image-container {
+  display: flex; /* Flexbox for image */
+  flex-direction: column; /* Stacks items vertically */
+  align-items: center; /* Centers items horizontally */
+}
+
+.image-container img {
+  width: 100%; /* Full width */
+  height: 400px; /* Fixed height */
+}
+
+.caption {
+  font-style: italic; /* Italics for caption */
+  margin-top: 5px; /* Adds space between image and caption */
+  font-size: 0.9rem; /* Smaller font size */
+}
+.mental-health{
+    background: #f9fbff;
+    padding: 40px;
+}
+
+.mental-health-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to break into a new row if needed */
+  gap: 30px; /* Keeps spacing between items */
+  justify-content: space-between; /* Distributes evenly */
+  align-items: flex-start; /* Aligns items at the top */
+}
+
+.mental-item {
+  flex: 1; /* Ensures items grow equally */
+  text-align: center; /* Keeps text aligned */
+}
+
+.life-outside {
+    background: #f7f7f7; /* Light grey for contrast */
+    padding: 40px;
+}
+
+.life-item {
+    list-style: none; /* Removes default bullets */
+}
+
+.life-item li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; /* Light dividers */
+}
+
+/* END OF MAIN PAGE - INDEX */
+
+/* MSI Advising Resource Site */
+.section-a {
+  background-color: #366694; /* UM Blue accent */
+  background-size: cover; /* Cover the entire container */
+  color: white;  /* White text */
+  padding: 4rem 3rem; /* Relative unit to ensure scalable & responsive padding around the content */
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+}
+
+.section-a h1 {
+  font-size: 3rem; /* Larger font size */
+  font-weight: 800; /* Bold font weight */
+  margin-bottom: 1.5rem; /* Space at the bottom */
+  border-bottom: 4px solid #ffcb05; /* UM Yellow accent */
+  display: inline-block; /* Inline block to fit yellow border to the container */
+  padding-bottom: 0.5rem; /* Space at the bottom */
+}
+
+.section-a h2 {
+  font-size: 2rem; /* Larger font size */
+  font-weight: 600; /* Bold font weight */
+  margin-bottom: 1rem;  /* Space at the bottom */
+}
+
+.section-a p {
+  font-size: 1.2rem; /* Larger font size */
+  line-height: 1.6; /* Spacing between lines */
+  margin-bottom: 1rem; /* Space at the bottom */
+}
+
+.section-a img{
+  border-radius: 16px; /* Rounded corners to be more user friendly */
+  width: 100%; /* Full width */
+}
+.section-a ul{
+  padding-left: 0; /* Removes default padding */
+}
+.section-a li{
+  display: grid;  /* multiple rows using Grid layout */
+  justify-content: start; /* Aligns items to the start */
+  border: 1px solid #ffcb05; /* UM Yellow border to distinguish each other*/
+  border-radius: 16px; /* Rounded corners to be more user friendly */
+  padding: 16px;
+  margin: 16px;
+}
+
+.section-b{
+  display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    gap: 20px; /* Space between buttons */
+    padding: 40px; /* Adjust padding */
+    background-color: #222e3a; /* Background color */
+    color: #fff;
+}
+
+.section-b ul {
+  list-style-type: none; /* Removes default bullets */
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Ensures full-width alignment */
+}
+
+.section-b li {
+  display: flex; /* Make buttons flexible */
+  justify-content: center; /* Center text inside buttons */
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #ffcb05;
+  border-radius: 12px;
+  width: 80%; /* Adjust width */
+  text-align: center;
+  margin: 10px 0; /* Space between buttons */
+}
+
+.section-c{
+  display: grid;
+  grid-template-columns: 1/-1;
+  justify-items: center;
+  padding: 64px;
+  color: white;
+  background-color: #366694;
+}
+
+.section-c a{
+  color: #ffcb05; /* UM Yellow */
+}
+
+.section-d {
+  display: flex; 
+  justify-content: center; /* Centers items */
+  gap: 20px; /* Adds spacing */
+  padding: 64px;
+  flex-wrap: wrap; /* Prevents overlap on small screens */
+}
+
+.section-d ul {
+  list-style: none; /* Removes default bullets */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  display: flex;
+  gap: 20px; /* Spacing between items */
+}
+
+.section-d li {
+  display: flex;  /* use of Flexbox */
+  align-items: center; /* Aligns items */
+  justify-content: center; /* Centers items */
+  padding: 16px 24px; /* Padding around items */
+  border: 1px solid #ffcb05; /* UM Yellow border */
+  border-radius: 16px; /* Rounded corners */
+  text-align: center; /* Centers text */
+}
+
+/* END OF Page 2 */
+
+/* STUDENT LIFE - additional assignment section*/
+/* student-life page */
+.hero {
+  position: relative; /* Ensures text is above the background */
+  width: 100%; 
+  height: 400px;
+  display: flex; 
+  flex-direction: column;   /* Stack items vertically */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  
+}
+
+.hero img {
+  position: absolute; /* Ensures image is behind text */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Moves the image behind the text */
+}
+
+.hero h1,
+.hero p {
+  position: relative; /* Ensures text is above the background */
+  z-index: 1; /* Moves the text above the image */
+  margin: 0; /* Removes default margin */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+/* Container */
+.resources {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Dynamic columns - w3 reference */
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto; /* Centering */
+  background: #f7f7f7;
+}
+
+/* Section Title */
+.resources h2 {
+  grid-column: 1 / -1; /* Full width */
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Individual Article Cards */
+.resources article {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* Images */
+.resources img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Headings */
+.resources h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+/* Paragraphs */
+.resources p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+/* Special Styling for "View All Resources" */
+.resources article:last-child {
+  background: #00274c; /* Dark blue */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* END OF STUDENT LIFE */
