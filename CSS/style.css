@@ -57,20 +57,24 @@ nav ul li a:active {
   font-weight: bold; /*bold text*/
 }
 
+nav ul li a.active {
+  color: #ffcb05;   /* UM Maize */
+  font-weight: bold;
+}
 
 /* Footer */
 
 footer {
-  position: relative;
-  background: #00274c;
-  color: white;
-  padding: 20px;
-  text-align: center;
+  position: relative; /* relative positioning */
+  background: #00274c; /* UM Blue */
+  color: white; /* white text */
+  padding: 20px; /* padding around the text */
+  text-align: center; /* center text */
 }
 
 footer a {
-  color: white;
-  text-decoration: none;
+  color: white; /* white text */
+  text-decoration: none; /* no underline */
 }
 
 /* END OF COMMON STYLING */
@@ -129,21 +133,21 @@ footer a {
 
 /* Section 2 */
 
-.physical-health {
+.physical-health { 
   background: #f0f3ff;
   padding: 40px;
 }
 
 .physical-health h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem; /* responsive and larger font size */
+    font-weight: 600; /* bold font weight */
+    margin-bottom: 0.5rem; /* space at the bottom */
   }
 
   .physical-health h3 {
-    font-size: 1.25 rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
+    font-size: 1.25 rem; /* responsive and relatively less larger font size to show h3 hierarchy*/
+    font-weight: 500; /* semi-bold font weight */
+    margin-bottom: 0.5rem; /* space at the bottom */
   }
   
 .physical-grid {
@@ -184,15 +188,15 @@ footer a {
 }
 
 .mental-health h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem; /* Larger font size */
+  font-weight: 600; /* Bold font weight */
+  margin-bottom: 0.5rem; /* Space at the bottom */
 }
 
 .mental-health h3 {
-  font-size: 1.25rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
+  font-size: 1.25rem; /* Relatively less larger font size */
+  font-weight: 500; /* Semi-bold font weight */
+  margin-bottom: 0.5rem; /* Space at the bottom */
 }
 
 .mental-health p {
@@ -222,9 +226,9 @@ footer a {
 }
 
 .life-outside h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem; /* Larger font size */
+  font-weight: 600; /* Bold font weight */
+  margin-bottom: 0.5rem; /* Space at the bottom */
 }
 
 .life-item {
@@ -238,55 +242,55 @@ footer a {
 
 /* footer */
 footer {
-  background-color: #00274c;
-  color: white;
-  padding: 30px 20px;
-  text-align: center;
+  background-color: #00274c; /* UM Blue */
+  color: white; /* white text */
+  padding: 30px 20px; /* padding around the text */
+  text-align: center; /* center text */
 }
 
 .footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  gap: 40px;
-  margin-bottom: 20px;
+  display: flex; /* Flexbox for layout */
+  flex-wrap: wrap; /* Allows items to wrap */
+  justify-content: space-around; /* Distributes evenly */
+  align-items: flex-start; /* Aligns items at the top */
+  gap: 40px; /* Space between items */
+  margin-bottom: 20px; /* Space at the bottom */
 }
 
 .footer-container > div {
-  flex: 1;
-  min-width: 200px;
+  flex: 1; /* Flex-grow to fill space */
+  min-width: 200px; /* Minimum width for items */
 }
 
 footer h2 {
-  border-bottom: 2px solid #ffcb05;
-  display: inline-block;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
+  border-bottom: 2px solid #ffcb05; /* UM Yellow accent */
+  display: inline-block; /* Inline block to fit yellow border to the container */
+  margin-bottom: 10px; /* Space at the bottom */
+  font-size: 1.2rem; /* Larger font size */
 }
 
 /* Ensures quick links start below the heading */
-footer .footer-links a {
-  display: block;
-  margin: 6px 0;
+footer .footer-links a { 
+  display: block; /* Block display for links */
+  margin: 6px 0; /* Space between links */
 }
 
 footer a {
-  color: white;
+  color: white; /* white text */
   text-decoration: none;
 }
 
 footer a:hover {
-  color: #ffcb05;
-  text-decoration: underline;
+  color: #ffcb05; /* UM Yellow for hover effect*/
+  text-decoration: underline; /* Underline on hover */
 }
 
 .footer-bottom {
-  border-top: 1px solid #ffcb05;
-  padding-top: 15px;
-  margin-top: 30px;
-  font-size: 0.9rem;
-  text-align: center;
+  border-top: 1px solid #ffcb05; /* UM Yellow accent for line */
+  padding-top: 15px; /* Space at the top */
+  margin-top: 30px; /* Space at the top */
+  font-size: 0.9rem; /* Smaller font size */
+  text-align: center; /* Center text */
 }
 
 /* END OF MAIN PAGE - INDEX */
@@ -374,9 +378,9 @@ footer a:hover {
 }
 
 .section-c{
-  display: grid;
-  grid-template-columns: 1/-1;
-  justify-items: center;
+  display: grid; /* Grid layout */
+  grid-template-columns: 1/-1; /* Full width */
+  justify-items: center; /* Center items */
   padding: 64px;
   color: white;
   background-color: #366694;
@@ -419,73 +423,72 @@ footer a:hover {
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-size: 2.5rem;/* Sets a large font size for the main heading */
+  font-weight: bold;/* Makes the heading text bold */
+  margin-bottom: 10px;/* Adds space below the heading */
 }
 
 .hero p {
-  font-size: 1.2rem;
-  max-width: 600px;
+  font-size: 1.2rem;/* Sets a slightly larger font size for the paragraph */
+  max-width: 600px;/* Limits the paragraph width to improve readability */
 }
 
 .resources {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Dynamic columns - w3 reference */
-  gap: 20px;
-  padding: 20px;
-  margin: 0 auto; /* Centering */
-  background: #f7f7f7;
+  display: grid;/* Uses CSS Grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Creates responsive columns that adapt to screen size */
+  gap: 20px; /* Adds space between grid items */
+  padding: 20px; /* Adds padding inside the container */
+  margin: 0 auto; /* Centers the container horizontally */
+  background: #f7f7f7;/* Sets a light gray background for the section */
 }
 
 .resources h2 {
-  grid-column: 1 / -1; /* Full width */
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-bottom: 15px;
+  grid-column: 1 / -1;/* Makes the heading span the entire width of the grid */
+  text-align: center; /* Centers the heading text */
+  font-size: 1.8rem; /* Sets a larger font size for the section heading */
+  font-weight: bold; /* Makes the heading text bold */
+  margin-bottom: 15px; /* Adds space below the heading */
 }
 
 /* Individual Article Cards */
 .resources article {
-  background: white;
-  padding: 15px;
-  border-radius: 6px;
-  text-align: center;
+  background: white;/* Sets a white background for each card */
+  padding: 15px;/* Adds space inside each card */
+  border-radius: 6px;/* Rounds the corners slightly */
+  text-align: center;/* Centers the text inside each card */
 }
 
 /* Images */
 .resources img {
-  width: 100%;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 10px;
+  width: 100%;/* Makes the image take up the full width of its container */
+  height: 140px;/* Sets a fixed height for all images */
+  object-fit: cover;/* Ensures images fill their container while keeping aspect ratio */
+  border-radius: 6px;/* Slightly rounds the image corners */
+  margin-bottom: 10px;/* Adds space below each image */
 }
 
 /* Headings */
 .resources h3 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 5px;
+  font-size: 1.2rem;/* Sets the font size for article titles */
+  font-weight: 700;/* Makes the text bold */
+  margin-bottom: 5px;/* Adds space below the heading */
 }
 
 /* Paragraphs */
 .resources p {
-  font-size: 1rem;
-  line-height: 1.4;
-  color: #333;
+  font-size: 1rem;/* Sets the font size for paragraph text */
+  line-height: 1.4;/* Increases line height for better readability */
 }
 
 /* Special Styling for "View All Resources" */
 .resources article:last-child {
-  background: #00274c; /* Dark blue */
-  color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: #00274c; /* Sets a dark blue background */
+  color: white;/* Makes the text white for contrast */
+  font-size: 1.2rem;/* Increases font size slightly */
+  font-weight: bold;/* Makes the text bold */
+  display: flex;/* Uses flexbox to center content */
+  align-items: center;/* Vertically centers the content */
+  justify-content: center;/* Horizontally centers the content */
 }
 
 
@@ -493,11 +496,11 @@ footer a:hover {
 
 .part1, .part2 {
   padding: 40px 5vw; /* use responsive horizontal padding */
-  background-color: #f9fbff;
-  margin: 0 auto;
-  border-radius: 16px;
-  margin-bottom: 40px;
-  line-height: 1.6;
+  background-color: #f9fbff; /* Light background color */
+  margin: 0 auto; /* Centers the container */
+  border-radius: 16px; /* Rounded corners */
+  margin-bottom: 40px; /* Space below each section */
+  line-height: 1.6; /* Spacing between lines */
 }
 
 .part1 h1 {
@@ -625,23 +628,11 @@ footer a:hover {
     font-weight: bold;
   }
 
-/*   
 
 
-  .section-b li:hover {
-    background-color: #366694;
-    color: #00274c;
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
-  }
-
-  nav ul li a:hover {
-    color: #ffcb05; /* UM Maize Color */
-
-
-  /* .section-d li:hover {
-    background-color: #fbfb95;
-    color: #00274c;
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
-  } */ 
+.error-container {
+  background-color: #f9fbff; /* Light background for content box */
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Optional subtle shadow */
+}

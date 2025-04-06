@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>404 - Page Not Found</title>
+  <style>
+    .error-container {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .error-container h1 {
+      font-size: 3rem;
+      color: #00274c;
+      margin-bottom: 20px;
+    }
+
+    .error-container p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .error-links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #00274c;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .error-links a:hover {
+      background-color: #ffcb05;
+      color: #00274c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tutoring.html">MSI Tutoring</a></li>
+        <li><a href="msidegree.html">MSI Advising</a></li>
+        <li><a href="student_life.html">Student Life</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" id="main">
+    <div class="error-container">
+      <h1>404 - Page Not Found</h1>
+      <p>Oops! Looks like this page doesn't exist or may have been moved.</p>
+      <p>Here are some helpful links to get you back on track:</p>
+
+      <div class="error-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="tutoring.html">📘 MSI Tutoring</a>
+        <a href="msidegree.html">🎓 MSI Advising</a>
+        <a href="student_life.html">💬 Student Life</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>UMSI Advising | <a href="mailto:umsi.advising.msi@umich.edu">umsi.advising.msi@umich.edu</a></p>
+    <p>&copy; <span id="year"></span> The University of Michigan</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
