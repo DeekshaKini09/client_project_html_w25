@@ -15,14 +15,14 @@
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
-                <li><a href = "tutoring.html">MSI Tutoring</a></li>
+                <li><a href="tutoring.html" class="active">MSI Tutoring</a></li>
                 <li><a href="msidegree.html">MSI Advising</a></li>
                 <li><a href="student_life.html">Student Life</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         <div class="part1">
             <h1>UMSI Tutoring & Academic Support</h1>
             <h2>Welcome!</h2>
@@ -42,24 +42,34 @@
             <p>For more information regarding student support and tutoring, please email <a href = "umsi.academicsuccess@umich.edu">umsi.academicsuccess@umich.edu</a></p>
         </div>
         
-
-        <div class="part3">
-            <nav>
-                <h3>UMSI Tutoring</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="https://sites.google.com/umich.edu/umsitutoring/umsi-programming-tutoring?authuser=0">UMSI Programming Tutoring</a></li>
-                    <li><a href="https://sites.google.com/umich.edu/umsitutoring/umsi-math-tutoring?authuser=0">UMSI Math Tutoring</a></li>
-                    <li><a href="https://sites.google.com/umich.edu/umsitutoring/additional-academic-support?authuser=0">Additional Support Academic</a></li>
-                </ul>
-            </nav>
-        </div>
     </main>
+
+    <section class="feedback-section">
+        <form id="feedback-form">
+          <label for="service">Which service did you use?</label>
+          <select id="service">
+            <option>MSI Tutoring</option>
+            <option>Student Life</option>
+            <option>Advising</option>
+          </select>
+      
+          <label for="satisfaction">How satisfied are you?</label>
+          <input type="range" min="1" max="5" id="satisfaction">
+      
+          <button type="submit">Submit Feedback</button>
+          <p id="feedback-result"></p>
+        </form>
+      </section>
 
     <footer>
         <p>UMSI Academic Success</p>
         <p>Email: umsi.academicsuccess@umich.edu</p>
         <p>Website: Academic Success</p>
+        <p>© <span id="year"></span> The University of Michigan</p>
     </footer>
+    
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
 </body>
 </html>

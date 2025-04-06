@@ -1,11 +1,13 @@
+/* MOBILE VIEW */
 /* COMMON STYLING */
 
 
-/* skip to main content off screen & on focus */
-.skip a{
+/*Skip to main content*/
+
+.skip a {
   position: absolute; /*in reference to left*/
-    left:-10000px; /*off screen*/
-    height: 25px; /*large enough to click*/
+  left: -10000px; /*off screen*/
+  height: 25px; /*large enough to click*/
 }
 
 .skip a:focus {
@@ -14,18 +16,22 @@
 }
 
 
-/* styling header */
-header {
+/*Top Bar*/
+
+header {/* styling header */
   display: flex; /*type of display*/
   align-items: center; /*identify how I want to items to align under inspect elements*/
   justify-content: space-between; /*space between items*/
-  padding: 1rem 2vw;/* Top&Bottom: 1rem; Left&Right: 2 view width */
+  padding: 1rem 2vw; /* Top&Bottom: 1rem; Left&Right: 2 view width */
   background-color: #00274c; /* UM Blue */
 }
 
 header img {
   height: 4rem; /* resizing the img to stay fixed at 4rem */
 }
+
+
+/* Navigation Bar */
 
 nav ul {
   list-style: none; /*removes the bullet points*/
@@ -40,15 +46,21 @@ nav ul li a {
   color: white; /*color of the text*/
   font-weight: bold; /*bold text*/
   padding: 10px; /*padding around the text*/
-  
 }
 
 nav ul li a:hover {
   color: #ffcb05; /* UM Maize Color */
 }
 
+nav ul li a:active {
+  color: #ffcb05; /* UM Maize Color */
+  font-weight: bold; /*bold text*/
+}
 
-footer{
+
+/* Footer */
+
+footer {
   position: relative;
   background: #00274c;
   color: white;
@@ -60,13 +72,16 @@ footer a {
   color: white;
   text-decoration: none;
 }
+
 /* END OF COMMON STYLING */
+
 
 
 /* MAIN PAGE - INDEX */
 
 
-/* index.html */
+/* Section 1 */
+
 .container {
   /* display related */
   display: flex; /* use flexbox */
@@ -80,7 +95,6 @@ footer a {
   /* backrgound image & sizing */
   background: url("../images/background.jpg") no-repeat center center; /* background image shorthand property*/
   background-size: cover; /* cover the entire container */
-  
 }
 
 .overview {
@@ -92,7 +106,7 @@ footer a {
 }
 
 .overview h1 {
-  font-size: 3rem; /* Larger font size */
+  font-size: 2.5rem; /* Larger font size */
   font-weight: 600; /* Bold font weight */
   margin-bottom: 1.5rem; /* Space at the bottom */
   border-bottom: 4px solid #ffcb05; /* UM Yellow accent */
@@ -112,11 +126,26 @@ footer a {
   margin-bottom: 1rem; /* Space at the bottom */
 }
 
+
+/* Section 2 */
+
 .physical-health {
   background: #f0f3ff;
   padding: 40px;
 }
 
+.physical-health h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .physical-health h3 {
+    font-size: 1.25 rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
 .physical-grid {
   display: grid; /* Since contains more than 1 column -> Grid layout */
   grid-template-columns: 1fr 1fr; /* Two equal fraction columns */
@@ -145,9 +174,30 @@ footer a {
   margin-top: 5px; /* Adds space between image and caption */
   font-size: 0.9rem; /* Smaller font size */
 }
-.mental-health{
-    background: #f9fbff;
-    padding: 40px;
+
+
+/* Section 3 */
+
+.mental-health {
+  background: #f9fbff;
+  padding: 40px;
+}
+
+.mental-health h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.mental-health h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.mental-health p {
+  /*fixing spacing*/
+  margin-bottom: 1rem; /* Space at the bottom */
 }
 
 .mental-health-grid {
@@ -163,23 +213,89 @@ footer a {
   text-align: center; /* Keeps text aligned */
 }
 
+
+/* Section 4 */
+
 .life-outside {
-    background: #f7f7f7; /* Light grey for contrast */
-    padding: 40px;
+  background: #f7f7f7; /* Light grey for contrast */
+  padding: 40px;
+}
+
+.life-outside h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 .life-item {
-    list-style: none; /* Removes default bullets */
+  list-style: none; /* Removes default bullets */
 }
 
 .life-item li {
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd; /* Light dividers */
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd; /* Light dividers */
+}
+
+/* footer */
+footer {
+  background-color: #00274c;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.footer-container > div {
+  flex: 1;
+  min-width: 200px;
+}
+
+footer h2 {
+  border-bottom: 2px solid #ffcb05;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* Ensures quick links start below the heading */
+footer .footer-links a {
+  display: block;
+  margin: 6px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffcb05;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ffcb05;
+  padding-top: 15px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 /* END OF MAIN PAGE - INDEX */
 
-/* MSI Advising Resource Site */
+
+
+/* PAGE 2: MSI Advising */
+
+
 .section-a {
   background-color: #366694; /* UM Blue accent */
   background-size: cover; /* Cover the entire container */
@@ -270,36 +386,11 @@ footer a {
   color: #ffcb05; /* UM Yellow */
 }
 
-.section-d {
-  display: flex; 
-  justify-content: center; /* Centers items */
-  gap: 20px; /* Adds spacing */
-  padding: 64px;
-  flex-wrap: wrap; /* Prevents overlap on small screens */
-}
-
-.section-d ul {
-  list-style: none; /* Removes default bullets */
-  padding: 0; /* Removes default padding */
-  margin: 0; /* Removes default margin */
-  display: flex;
-  gap: 20px; /* Spacing between items */
-}
-
-.section-d li {
-  display: flex;  /* use of Flexbox */
-  align-items: center; /* Aligns items */
-  justify-content: center; /* Centers items */
-  padding: 16px 24px; /* Padding around items */
-  border: 1px solid #ffcb05; /* UM Yellow border */
-  border-radius: 16px; /* Rounded corners */
-  text-align: center; /* Centers text */
-}
-
 /* END OF Page 2 */
 
-/* STUDENT LIFE - additional assignment section*/
-/* student-life page */
+
+/* Page 3: STUDENT LIFE*/
+
 .hero {
   position: relative; /* Ensures text is above the background */
   width: 100%; 
@@ -310,7 +401,6 @@ footer a {
   justify-content: center;
   text-align: center;
   color: black;
-  
 }
 
 .hero img {
@@ -338,7 +428,7 @@ footer a {
   font-size: 1.2rem;
   max-width: 600px;
 }
-/* Container */
+
 .resources {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Dynamic columns - w3 reference */
@@ -348,7 +438,6 @@ footer a {
   background: #f7f7f7;
 }
 
-/* Section Title */
 .resources h2 {
   grid-column: 1 / -1; /* Full width */
   text-align: center;
@@ -400,4 +489,159 @@ footer a {
 }
 
 
+/* Pag2 4: Tutoring page - New Addition */
+
+.part1, .part2 {
+  padding: 40px 5vw; /* use responsive horizontal padding */
+  background-color: #f9fbff;
+  margin: 0 auto;
+  border-radius: 16px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.part1 h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #00274c;
+  font-weight: 700;
+  border-bottom: 3px solid #ffcb05;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.part1 h2, .part2 h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: #00274c;
+  font-weight: 600;
+}
+
+.part1 p, .part2 p {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.part2 a {
+  color: #ffcb05;
+  font-weight: bold;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+
+.part2 a:hover {
+  text-decoration: underline;
+}
+
 /* END OF STUDENT LIFE */
+/* END OF MOBILE VIEW */
+
+
+/* TABLET VIEW */
+
+@media (min-width: 768px) {
+  /* Nav items go horizontal */
+  nav ul {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  /* Header layout adjusts */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    }
+  }
+
+    .section-a, .section-b, .section-c, .part1, .part2 {
+      padding: 60px 5vw; /* use responsive horizontal padding */
+    }
+  
+    h1 { /* Larger font sizes */
+      font-size: 2.5rem;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1.1rem;
+    }
+
+    /* updated section layout */
+    .physical-grid,
+  .resources {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mental-health-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+/* javascript form styling */
+  #feedback-form {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  #feedback-form label {
+    font-weight: bold;
+    color: #00274c;
+  }
+  
+  #feedback-form select,
+  #feedback-form input,
+  #feedback-form button {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  #feedback-form button {
+    background-color: #00274c;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #feedback-form button:hover {
+    background-color: #ffcb05;
+    color: #00274c;
+  }
+  
+  #feedback-result {
+    margin-top: 10px;
+    color: #00274c;
+    font-weight: bold;
+  }
+
+/*   
+
+
+  .section-b li:hover {
+    background-color: #366694;
+    color: #00274c;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+
+  nav ul li a:hover {
+    color: #ffcb05; /* UM Maize Color */
+
+
+  /* .section-d li:hover {
+    background-color: #fbfb95;
+    color: #00274c;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  } */ 

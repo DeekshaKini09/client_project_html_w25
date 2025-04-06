@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/html5reset.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/html5reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Student Success Portal</title>
-</head>
+  </head>
 
   <body>
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
@@ -17,7 +17,7 @@
       />
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="tutoring.html">MSI Tutoring</a></li>
           <li><a href="msidegree.html">MSI Advising</a></li>
           <li><a href="student_life.html">Student Life</a></li>
@@ -162,8 +162,59 @@
       </div>
     </main>
 
+    <section class="feedback-section">
+      <form id="feedback-form">
+        <label for="service">Which service did you use?</label>
+        <select id="service">
+          <option>MSI Tutoring</option>
+          <option>Student Life</option>
+          <option>Advising</option>
+        </select>
+    
+        <label for="satisfaction">How satisfied are you?</label>
+        <input type="range" min="1" max="5" id="satisfaction">
+    
+        <button type="submit">Submit Feedback</button>
+        <p id="feedback-result"></p>
+      </form>
+    </section>
+
     <footer>
-        <p>MSI Advising | <a href="umsi.advising.msi@umich.edu">umsi.advising.msi@umich.edu</a></p>
+      <div class="footer-container">
+        <div>
+          <h2>Contact Us</h2>
+          <p>Email: <a href="mailto:umsi@umich.edu">umsi@umich.edu</a></p>
+          <p>Phone: (734) 764-1817</p>
+        </div>
+    
+        <div>
+          <h2>Quick Links</h2>
+          <p>
+          <a href="index.html">Home</a><br>
+          <a href="tutoring.html">MSI Tutoring</a><br>
+          <a href="msidegree.html">MSI Advising</a><br>
+          <a href="student_life.html">Student Life</a>
+          </p>
+        </div>
+    
+        <div>
+          <h2>Follow Us</h2>
+          <p>
+          <a href="#">Facebook</a> |
+          <a href="#">Twitter</a> |
+          <a href="#">Instagram</a>
+          </p>
+        </div>
+      </div>
+    
+      <p class="footer-bottom">
+        &copy; <span id="year"></span> The University of Michigan
+      </p>
     </footer>
+    
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
   </body>
 </html>

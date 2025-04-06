@@ -17,7 +17,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="tutoring.html">MSI Tutoring</a></li>
           <li><a href="msidegree.html">MSI Advising</a></li>
-          <li><a href="student_life.html">Student Life</a></li>
+          <li><a href="student_life.html" class="active">Student Life</a></li>
         </ul>
       </nav>
     </header>
@@ -80,6 +80,24 @@
         </article>
       </div>
     </main>
+
+    <section class="feedback-section">
+      <form id="feedback-form">
+        <label for="service">Which service did you use?</label>
+        <select id="service">
+          <option>MSI Tutoring</option>
+          <option>Student Life</option>
+          <option>Advising</option>
+        </select>
+    
+        <label for="satisfaction">How satisfied are you?</label>
+        <input type="range" min="1" max="5" id="satisfaction">
+    
+        <button type="submit">Submit Feedback</button>
+        <p id="feedback-result"></p>
+      </form>
+    </section>
+    
     <footer>
       <p>Student Life</p>
       <p>
@@ -87,6 +105,11 @@
         educator and employer.
       </p>
       <p>Copyright © 2025 The Regents of the University of Michigan</p>
+      <p>© <span id="year"></span> The University of Michigan</p>
     </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
   </body>
 </html>
