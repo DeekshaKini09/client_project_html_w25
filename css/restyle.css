@@ -1,0 +1,31 @@
+
+@media (min-width: 768px) {
+    /* Nav items go horizontal */
+    nav ul {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  
+    /* Header layout adjusts */
+    header {
+      flex-direction: row;
+      justify-content: space-between;
+    }}
+  
+    .section-b li:hover {
+      background-color: #366694;
+      color: #00274c;
+      transform: scale(1.05);
+      transition: all 0.3s ease-in-out;
+    }
+  
+    nav ul li a:hover {
+      color: #ffcb05; /* UM Maize Color */
+    }
+  
+    .section-d li:hover {
+      background-color: #fbfb95;
+      color: #00274c;
+      transform: scale(1.05);
+      transition: all 0.3s ease-in-out;
+    }
